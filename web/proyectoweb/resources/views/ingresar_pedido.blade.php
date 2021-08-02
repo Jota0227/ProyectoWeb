@@ -22,8 +22,8 @@
                         <input type="text" id="hora-txt" class="form-control">
                       </div>
                 </div>
-                <div class="card-footer bg-warning text-center">
-                    <button type="button" id="registrar-btn" class="btn btn-succes">Registrar</button>
+                <div class="card-footer bg-warning d-grid gap-1">
+                    <button type="button" id="registrar-btn" class="btn btn-success">Registrar</button>
                 </div>
             </div>
         </div>
