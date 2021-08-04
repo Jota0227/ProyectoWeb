@@ -1,6 +1,6 @@
-@extends("layouts.master")
+@extends("layouts.master_a")
 
-@section("contenido")
+@section("contenido-a")
 <div class="col-12 col-md-12 col-lg-6 mx-auto">
     <div class="card mt-5">
         <div class="card-header bg-success text-light">

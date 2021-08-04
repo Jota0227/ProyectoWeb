@@ -28,11 +28,14 @@
             </div>
         </div>
         <div class="col-12 col-md-12 col-lg-6 mx-auto">
-            <table class="table table-success table-bordered table-hover table-striped table-responsive">
-                <thead class="text-warning">
+            <div class="card-header bg-success text-light">
+                <span>Menu de hoy</span>
+            </div>
+            <table class="table table-success table-hover table-bordered table-striped table-responsive">
+                <thead class="text-white">
                     <tr>
-                    <th>Menu</th>
-                    <th>Valor</th>
+                    <td>Colaciones</td>
+                    <td>Valor</td>
                     </tr>
                 </thead>
                 <tbody id="tbody-tabla"></tbody>
@@ -40,4 +43,8 @@
         </div>
     </div>
 </div>
+@endsection
+@section('javascript')
+    <script src="{{asset('js/servicios/menusService.js')}}"></script> 
+    <script src="{{asset('js/ingresar_pedido.js')}}"></script>  
 @endsection

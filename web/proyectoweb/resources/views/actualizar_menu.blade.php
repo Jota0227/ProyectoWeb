@@ -1,6 +1,6 @@
-@extends("layouts.master")
+@extends("layouts.master_a")
 
-@section("contenido")
+@section("contenido-a")
 <div class="container-fluid pt-5">
     <div class="row mt-5">
         <div class="col-12 col-md-6 col-lg-5 mx-auto">
