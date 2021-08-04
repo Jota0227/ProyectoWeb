@@ -13,7 +13,7 @@
         <nav class="navbar navbar-dark bg-success navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="{{route('home')}}">
-                <img class="logo" src="{{asset('img/logo.png')}}" />
+                <img class="logo" src="{{asset('img/logo.jpg')}}" />
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
 [16:58]
@@ -37,7 +37,7 @@ aria-expanded="false" aria-label="Toggle navigation">
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js%22%3E"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="{{asset('js/axios_config.js')}}"></script>
     @yield("javascript")

@@ -39,3 +39,7 @@
     </div>
 </div>
 @endsection
+@section('javascript')
+    <script src="{{asset('js/servicios/menusService.js')}}"></script> 
+    <script src="{{asset('js/actualizar_menu.js')}}"></script>
+@endsection
