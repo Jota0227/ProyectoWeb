@@ -1,6 +1,6 @@
-@extends("layouts.master")
+@extends("layouts.master_c")
 
-@section("contenido")
+@section("contenido-c")
 <div class="container fluid pt-4">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-6 mx-auto">
@@ -36,6 +36,7 @@
                     <tr>
                     <td>Colaciones</td>
                     <td>Valor</td>
+                    <td>Seleccionar</td>
                     </tr>
                 </thead>
                 <tbody id="tbody-tabla"></tbody>
