@@ -46,5 +46,6 @@ aria-expanded="false" aria-label="Toggle navigation">
             </div>
         </div>
     </div>
+    <script src="{{asset('js/home.js')}}"></script>
   </body>
 </html>
