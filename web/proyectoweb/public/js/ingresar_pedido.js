@@ -1,5 +1,3 @@
-
-
 const seleccionarPedido = async function(){
     var tabla = document.getElementById('tbody-tabla'),
     fila = tabla.getElementsByTagName('tr');
@@ -73,7 +71,7 @@ document.querySelector("#registrar-btn").addEventListener("click", async ()=>{
         pedido.colacion=colacion;
         pedido.valor=valor;
         let res = await crearPedido(pedido);
-        await Swal.fire("Pedido Registrado", "Pedido registrado exitosamente", "info");
+        await Swal.fire("Menu Ingresado", "Menu ingresado exitosamente", "info");
     }else{
         Swal.fire({
             tittle: "Errores de validacion",icon: "warning",html: errores.join("<br />")});

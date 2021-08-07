@@ -15,7 +15,7 @@
                     </div>
                     <div class="mb-4">
                         <label for="numero-txt" class="form-label" >Numero de contacto del Cliente</label>
-                        <input type="int" class="form-control" id="numero-txt" placeholder="9XXXXXXXX">
+                        <input type="number" class="form-control" id="numero-txt" placeholder="9XXXXXXXX">
                      </div>
                      <div class="mb-4">
                         <label for="hora-txt" class="form-label">Hora de Retiro</label>
@@ -27,7 +27,7 @@
                       </div>
                       <div class="mb-4">
                         <label for="valorC-txt" class="form-label">Valor</label>
-                        <input type="int" id="valorC-txt" readonly class="form-control">
+                        <input type="number" id="valorC-txt" readonly class="form-control">
                       </div>
                 </div>
                 <div class="card-footer bg-warning d-grid gap-1">
