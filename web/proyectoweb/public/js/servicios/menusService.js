@@ -1,4 +1,3 @@
-
 const getMenus = async ()=>{
     let resp;
     resp = await axios.get("api/menus/get");

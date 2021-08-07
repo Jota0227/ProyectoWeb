@@ -1,6 +1,17 @@
+
+
 const seleccionarPedido = async function(){
-    let id=this.idMenu;
-    await Swal.fire({text:"Menu Seleccionado"});
+    var tabla = document.getElementById('tbody-tabla'),
+    fila = tabla.getElementsByTagName('tr');
+
+    for (var i = 0, len = fila.length; i < len; i++) {
+        fila[i].onclick = function() {
+        console.log(this.innerHTML);
+        var tr = this.innerHTML.split("td");
+        document.getElementById("colacionC-txt").value  = tr[1].substring(1,tr[1].length-2);
+        document.getElementById("valorC-txt").value = tr[3].substring(1,tr[3].length-2);
+    };
+    }
 };
 
 const cargarTabla2 = (menus)=>{
@@ -31,15 +42,18 @@ document.addEventListener("DOMContentLoaded", async ()=>{
     cargarTabla2(menus);
 });
 
+
 document.querySelector("#registrar-btn").addEventListener("click", async ()=>{
     let nombre=document.querySelector("#nombre-txt").value;
-    let numero=document.querySelector("#numero-txt").value;
+    let contacto=document.querySelector("#numero-txt").value;
     let hora=document.querySelector("#hora-txt").value;
+    let colacion=document.querySelector("#colacionC-txt").value;
+    let valor=document.querySelector("#valorC-txt").value;
     let errores= [];
     if(nombre===""){
         errores.push("Debe ingresar un nombre")
     }
-    if(numero===""){
+    if(contacto===""){
         errores.push("Debe ingresar un numero de contacto")
     }
     if(hora===""){
@@ -47,12 +61,18 @@ document.querySelector("#registrar-btn").addEventListener("click", async ()=>{
     }else if(hora.charAt(2)!=":" || hora.length!=5){
         errores.push("El formato de la hora no es el correcto")
     }
+    if(colacion===""){
+        errores.push("Debe seleccionar un pedido")
+    }
+    
     if(errores.length==0){
         let pedido = {};
         pedido.nombre=nombre;
-        pedido.numero=numero;
+        pedido.contacto=contacto;
         pedido.hora=hora;
-        let res = await crearMenu(pedido);
+        pedido.colacion=colacion;
+        pedido.valor=valor;
+        let res = await crearPedido(pedido);
         await Swal.fire("Pedido Registrado", "Pedido registrado exitosamente", "info");
     }else{
         Swal.fire({

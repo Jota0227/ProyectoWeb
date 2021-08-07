@@ -14,12 +14,20 @@
                         <input type="text" class="form-control" id="nombre-txt" >
                     </div>
                     <div class="mb-4">
-                        <label for="numero-txt" class="form-label" >Numero del Cliente</label>
-                        <input type="int" class="form-control" id="numero-txt" >
+                        <label for="numero-txt" class="form-label" >Numero de contacto del Cliente</label>
+                        <input type="int" class="form-control" id="numero-txt" placeholder="9XXXXXXXX">
                      </div>
                      <div class="mb-4">
                         <label for="hora-txt" class="form-label">Hora de Retiro</label>
                         <input type="text" id="hora-txt" class="form-control">
+                      </div>
+                      <div class="mb-4">
+                        <label for="colacionC-txt" class="form-label">Colacion seleccionada</label>
+                        <input type="text" id="colacionC-txt" readonly class="form-control">
+                      </div>
+                      <div class="mb-4">
+                        <label for="valorC-txt" class="form-label">Valor</label>
+                        <input type="int" id="valorC-txt" readonly class="form-control">
                       </div>
                 </div>
                 <div class="card-footer bg-warning d-grid gap-1">
@@ -31,12 +39,12 @@
             <div class="card-header bg-success text-light">
                 <span>Menu de hoy</span>
             </div>
-            <table class="table table-success table-hover table-bordered table-striped table-responsive">
+            <table class="table table-success table-hover table-bordered table-striped table-responsive" id="tabla-menu-cliente">
                 <thead class="text-white">
                     <tr>
-                    <td>Colaciones</td>
-                    <td>Valor</td>
-                    <td>Seleccionar</td>
+                    <th>Colaciones</td>
+                    <th>Valor</td>
+                    <th>Seleccionar</td>
                     </tr>
                 </thead>
                 <tbody id="tbody-tabla"></tbody>
@@ -47,5 +55,6 @@
 @endsection
 @section('javascript')
     <script src="{{asset('js/servicios/menusService.js')}}"></script> 
+    <script src="{{asset('js/servicios/pedidosService.js')}}"></script> 
     <script src="{{asset('js/ingresar_pedido.js')}}"></script>  
 @endsection

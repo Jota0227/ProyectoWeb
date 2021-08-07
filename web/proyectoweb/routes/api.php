@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenusController;
+use App\Http\Controllers\PedidosController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -23,8 +24,8 @@ Route::post("menus/post", [MenusController::class, "crearMenu"]);
 
 Route::post("menus/delete", [MenusController::class, "eliminarMenu"]);
 
-Route::get("pedidos/get", [MenusController::class, "getPedidos"]);
+Route::get("pedidos/get", [PedidosController::class, "getPedidos"]);
 
-Route::post("pedidos/post", [MenusController::class, "crearPedido"]);
+Route::post("pedidos/post", [PedidosController::class, "crearPedido"]);
 
-Route::post("pedidos/delete", [MenusController::class, "eliminarPedido"]);
+Route::post("pedidos/delete", [PedidosController::class, "eliminarPedido"]);

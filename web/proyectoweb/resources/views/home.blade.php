@@ -41,7 +41,7 @@ aria-expanded="false" aria-label="Toggle navigation">
                     <button id="cliente-btn" class="btn btn-success">Cliente</button>
                 </div>
                 <div class="card-footer d-grid gap-6 pt-3 pb-3">
-                    <button id="usuario-btn" class="btn btn-success">Usuario</button>
+                    <button id="admin-btn" class="btn btn-success">Administrador</button>
                 </div>
             </div>
         </div>
