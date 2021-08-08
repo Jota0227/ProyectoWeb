@@ -3,5 +3,5 @@ document.querySelector("#cliente-btn").addEventListener("click",()=>{
 });
 
 document.querySelector("#admin-btn").addEventListener("click",()=>{
-    window.location.href = "actualizar_menu";
+    window.location.href = "login_register";
 });

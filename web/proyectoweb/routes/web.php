@@ -24,3 +24,9 @@ Route::view("/ver_pedido","ver_pedido")->name("ver_pedido");
 Route::view("/modificar_informacion","modificar_informacion")->name("modificar_informacion");
 
 Route::view("/ver_informacion","ver_informacion")->name("ver_informacion");
+
+Route::view("/login_register","login_register")->name("login_register");
+
+Route::view("/iniciar_sesion","iniciar_sesion")->name("iniciar_sesion");
+
+Route::view("/registrar","registrar")->name("registrar");

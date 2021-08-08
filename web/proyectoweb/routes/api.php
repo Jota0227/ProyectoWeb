@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenusController;
 use App\Http\Controllers\PedidosController;
+use App\Http\Controllers\AdminsController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -29,3 +30,7 @@ Route::get("pedidos/get", [PedidosController::class, "getPedidos"]);
 Route::post("pedidos/post", [PedidosController::class, "crearPedido"]);
 
 Route::post("pedidos/delete", [PedidosController::class, "eliminarPedido"]);
+
+Route::get("admins/get", [AdminsController::class, "getAdmin"]);
+
+Route::post("admins/post", [AdminsController::class, "crearAdmin"]);
