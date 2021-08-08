@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", async ()=>{
     cargarTabla2(menus);
 });
 
-
 document.querySelector("#registrar-btn").addEventListener("click", async ()=>{
     let nombre=document.querySelector("#nombre-txt").value;
     let contacto=document.querySelector("#numero-txt").value;
@@ -71,7 +70,7 @@ document.querySelector("#registrar-btn").addEventListener("click", async ()=>{
         pedido.colacion=colacion;
         pedido.valor=valor;
         let res = await crearPedido(pedido);
-        await Swal.fire("Menu Ingresado", "Menu ingresado exitosamente", "info");
+        await Swal.fire("Pedido Registrado", "Pedido registrado exitosamente", "info");
     }else{
         Swal.fire({
             tittle: "Errores de validacion",icon: "warning",html: errores.join("<br />")});

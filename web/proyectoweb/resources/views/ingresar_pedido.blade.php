@@ -15,7 +15,7 @@
                     </div>
                     <div class="mb-4">
                         <label for="numero-txt" class="form-label" >Numero de contacto del Cliente</label>
-                        <input type="number" class="form-control" id="numero-txt" placeholder="9XXXXXXXX">
+                        <input type="text" class="form-control" id="numero-txt" placeholder="9XXXXXXXX">
                      </div>
                      <div class="mb-4">
                         <label for="hora-txt" class="form-label">Hora de Retiro</label>
@@ -55,6 +55,6 @@
 @endsection
 @section('javascript')
     <script src="{{asset('js/servicios/menusService.js')}}"></script> 
-    <script src="{{asset('js/servicios/pedidosService.js')}}"></script> 
+    <script src="{{asset('js/servicios/pedidosService.js')}}"></script>
     <script src="{{asset('js/ingresar_pedido.js')}}"></script>  
 @endsection

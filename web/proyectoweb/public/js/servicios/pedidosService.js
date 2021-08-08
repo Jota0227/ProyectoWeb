@@ -6,9 +6,9 @@ const getPedidos = async ()=>{
 
 
 const crearPedido = async(pedido)=>{
-    let resp = await axios.post("api/pedidos/post", pedido, {
-        headers: {
-            "Content-Type": "application/json"
+    let resp = await axios.post("api/pedidos/post", pedido,{
+        headers:{
+            "Content_Type": "application/json"
         }
     });
     return resp.data;
