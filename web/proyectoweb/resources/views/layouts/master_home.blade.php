@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <title>Sabor de Casa</title>
   </head>
-  <body background="img/fondo.jpg">
+  <body background="img/fondoF.jpg">
     <header>
         <nav class="navbar navbar-dark bg-success navbar-expand-lg">
             <div class="container-fluid">

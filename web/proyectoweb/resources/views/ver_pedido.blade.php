@@ -17,8 +17,12 @@
                 <td>Acciones</td>
                 </tr>
             </thead>
-            <tbody id="tbody-colaciones"></tbody>
+            <tbody id="tbody-pedidos"></tbody>
         </table>
     </div>
 </div>
+@endsection
+@section('javascript')
+    <script src="{{asset('js/servicios/pedidosService.js')}}"></script>  
+    <script src="{{asset('js/ver_pedido.js')}}"></script>  
 @endsection

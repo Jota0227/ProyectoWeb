@@ -33,7 +33,9 @@ document.querySelector("#registrar-btn").addEventListener("click", async ()=>{
     }else{
         Swal.fire({
             tittle: "Errores de validacion",icon: "warning",html: errores.join("<br />")});
-    } 
+    }
+    let menus = await getMenus();
+    cargarTabla(menus);
 });
 
 const cargarTabla = (menus)=>{

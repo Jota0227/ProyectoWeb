@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenusController;
 use App\Http\Controllers\PedidosController;
 use App\Http\Controllers\AdminsController;
+use App\Http\Controllers\informacionesController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -34,3 +35,7 @@ Route::post("pedidos/delete", [PedidosController::class, "eliminarPedido"]);
 Route::get("admins/get", [AdminsController::class, "getAdmin"]);
 
 Route::post("admins/post", [AdminsController::class, "crearAdmin"]);
+
+Route::get("informaciones/get", [informacionesController::class, "getInformaciones"]);
+
+Route::post("informaciones/post", [informacionesController::class, "crearInformacion"]);

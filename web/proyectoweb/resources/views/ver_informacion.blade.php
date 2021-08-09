@@ -20,27 +20,25 @@
                      <div class="mb-4">
                         <label for="correo-txt" class="form-label">---xxxxxxxxxxxxxxxxxx---</label>
                      </div>
-                     <div class="mb-2">
-                        <label for="direccionl-txt" class="form-label">---Direccion de retiro---</label>
-                    </div>
-                      <div class="mb-4">
-                        <label for="direccion-txt" class="form-label">---xxxxxxxxxxxxxxxxxx---</label>
-                      </div>
-                      <div class="mb-2">
-                        <label for="instruccionesl-txt" class="form-label">---Forma de realizar pedidos---</label>
-                      </div>
-                      <div class="mb-4">
-                        <label for="instrucciones-txt" class="form-label">xxxxxxxxxxxxxxxxxxxxxxxxxx</label>
-                      </div>
                       <div class="mb-2">
                         <label for="horariosl-txt" class="form-label">---Horarios de Atención---</label>
                       </div>
                       <div class="mb-4">
                         <label for="horarios-txt" class="form-label">xxxxxxxxxxxxxxxxxxxx</label>
                       </div>
+                      <div class="mb-2">
+                         <label for="direccionl-txt" class="form-label">---Direccion de retiro---</label>
+                     </div>
+                       <div class="mb-4">
+                         <label for="direccion-txt" class="form-label">---xxxxxxxxxxxxxxxxxx---</label>
+                       </div>
+                       <div id="mapid"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+@endsection
+@section('javascript')
+  <script src="{{asset('js/mapa.js')}}"></script>  
 @endsection
