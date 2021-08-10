@@ -4,7 +4,6 @@ const seleccionarPedido = async function(){
 
     for (var i = 0, len = fila.length; i < len; i++) {
         fila[i].onclick = function() {
-        console.log(this.innerHTML);
         var tr = this.innerHTML.split("td");
         document.getElementById("colacionC-txt").value  = tr[1].substring(1,tr[1].length-2);
         document.getElementById("valorC-txt").value = tr[3].substring(1,tr[3].length-2);

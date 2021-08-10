@@ -19,7 +19,7 @@
                     </div>
                     <div class="mb-4">
                         <label for="pass-txt" class="form-label" >Contraseña</label>
-                        <input type="text" class="form-control" id="pass-txt">
+                        <input type="password" class="form-control" id="pass-txt">
                      </div>
                      <div class="mb-4">
                         <label for="fono-txt" class="form-label" >Telefono</label>
@@ -34,8 +34,7 @@
     </div>
 </div>
 @endsection
-
 @section('javascript')
-    <script src="{{asset('js/adminsService.js')}}"></script>
-    <script src="{{asset('js/admin.js')}}"></script>
+    <script src="{{asset('js/servicios/adminsService.js')}}"></script>
+    <script src="{{asset('js/registrar_admin.js')}}"></script>
 @endsection

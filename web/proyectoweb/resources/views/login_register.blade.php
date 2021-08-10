@@ -13,7 +13,7 @@
                     <button id="iniciar-btn" class="btn btn-success">Iniciar Sesion</button>
                 </div>
                 <div class="card-footer d-grid gap-6 pt-3 pb-3">
-                    <button id="registrar-a-btn" class="btn btn-success">Resgistrarse</button>
+                    <button id="registrar-a-btn" class="btn btn-success">Registrarse</button>
                 </div>
             </div>
         </div>

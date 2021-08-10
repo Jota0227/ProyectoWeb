@@ -1,4 +1,4 @@
-const getAdmin = async ()=>{
+const getAdmins = async ()=>{
     let resp;
     resp = await axios.get("api/admins/get");
     return resp.data;

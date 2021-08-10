@@ -16,7 +16,7 @@ document.querySelector("#modificar-btn").addEventListener("click", async ()=>{
     if(direccion===""){
         errores.push("Debe indicar una direccion")
     }
-    
+
     if(errores.length==0){
         let informacion = {};
         informacion.numero=numero;

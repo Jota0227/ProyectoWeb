@@ -32,7 +32,7 @@ Route::post("pedidos/post", [PedidosController::class, "crearPedido"]);
 
 Route::post("pedidos/delete", [PedidosController::class, "eliminarPedido"]);
 
-Route::get("admins/get", [AdminsController::class, "getAdmin"]);
+Route::get("admins/get", [AdminsController::class, "getAdmins"]);
 
 Route::post("admins/post", [AdminsController::class, "crearAdmin"]);
 

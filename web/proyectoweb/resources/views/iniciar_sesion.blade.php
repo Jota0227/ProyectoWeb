@@ -15,7 +15,7 @@
                     </div>
                     <div class="mb-4">
                         <label for="pass-txt" class="form-label" >Contraseña</label>
-                        <input type="text" class="form-control" id="pass-txt">
+                        <input type="password" class="form-control" id="pass-txt">
                      </div>
                 </div>
             </div>
@@ -28,4 +28,6 @@
 @endsection
 
 @section('javascript')
+<script src="{{asset('js/servicios/adminsService.js')}}"></script>
+<script src="{{asset('js/ingresar_admin.js')}}"></script>
 @endsection
